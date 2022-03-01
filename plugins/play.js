@@ -5,7 +5,7 @@ let fs = require('fs')
 let yts = require('yt-search')
 let fetch = require('node-fetch')
 let handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) throw `uhm.. cari apa?\n\ncontoh:\n${usedPrefix + command} california`
+  if (!text) throw `play apaan :v\n\ncontoh:\n${usedPrefix + command} DinXT`
   let chat = global.db.data.chats[m.chat]
   let results = await yts(text)
   let vid = results.all.find(video => video.seconds < 3600)
@@ -46,8 +46,8 @@ ${vid.url}
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: 'Source Code',
-               url: 'https://pastelink.net/v19Md',
+               displayText: 'Owner',
+               url: 'https://wa.me/6281380674817',
              }
 
            },
